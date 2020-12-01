@@ -27,6 +27,12 @@ jobs:
     - name: Install dependencies
       run: npm install
     - run: npm run build
-    - name: Upload a Build Artifact
-      uses: actions/upload-artifact@v2
+    - uses: actions/checkout@v2
+
+    - run: mkdir -p ReactBuilds/
+    - run: echo hello > ReactBuilds/world.txt
+    - uses: actions/upload-artifact@v2
+      with:
+        name: my-artifact
+        path: ReactBuilds/      # or path/to/artifact
 
