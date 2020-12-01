@@ -33,6 +33,8 @@ jobs:
     - run: echo hello > ReactBuilds/world.txt
     - uses: actions/upload-artifact@v2
       with:
-        name: my-artifact
-        path: ReactBuilds/      # or path/to/artifact
+        name: build
+        path: build
+      name: showing folders in home dir
+    - run: ls
 
