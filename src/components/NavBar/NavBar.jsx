@@ -9,12 +9,7 @@ function NavBar(props) {
             let { user } = JSON.parse(userDetails);
             setCurrentRole(user.role);
         }
-
-
-
     }, [])
-
-
     return (
         <nav>
             <ul>
