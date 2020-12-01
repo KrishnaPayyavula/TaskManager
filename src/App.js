@@ -1,6 +1,6 @@
 import React, { useState, Fragment, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Redirect, Switch } from "react-router-dom";
-import AuthContext, { AuthProvider, AuthConsumer } from "./context/authContext";
+import AuthContext from "./context/authContext";
 import { routes } from "./routes/routes";
 import Login from "./components/Login/Login";
 import Registration from "./components/Registration/Registration";
@@ -12,12 +12,12 @@ import Worker from "./components/Worker/Worker"
 function App(props) {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [errorMessage, updateErrorMessage] = useState(null);
-  const [role, setRole] = useState("MANAGER");
-  const [userDetails, setUserDetails] = useState({
-    "id": "5f785b4dc5c3370cc0d61670",
-    "name": "krishna",
-    "role": "MANAGER"
-  })
+  const role = "MANAGER";
+  // const [userDetails, setUserDetails] = useState({
+  //   "id": "5f785b4dc5c3370cc0d61670",
+  //   "name": "krishna",
+  //   "role": "MANAGER"
+  // })
 
 
 
@@ -98,23 +98,23 @@ function App(props) {
 
 
 
-const Dashboard = () => {
-  return (
-    <>
-      <h4>THis is DashBoard Page</h4>
-    </>
-  )
-}
+// const Dashboard = () => {
+//   return (
+//     <>
+//       <h4>THis is DashBoard Page</h4>
+//     </>
+//   )
+// }
 
-const Users = () => {
-  return (
-    <>
-      <p>
-        Hi this is starting point
-      </p>
-    </>
-  )
-}
+// const Users = () => {
+//   return (
+//     <>
+//       <p>
+//         Hi this is starting point
+//       </p>
+//     </>
+//   )
+// }
 
 
 
