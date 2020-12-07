@@ -1,4 +1,5 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Node.js CI (Build Generation)](https://github.com/KrishnaPayyavula/TaskManager/workflows/Node.js%20CI%20(Build%20Generation)/badge.svg?branch=main)
 
 ## Available Scripts
 
