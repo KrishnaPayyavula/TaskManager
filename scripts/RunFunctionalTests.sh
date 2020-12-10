@@ -1,3 +1,3 @@
 #!/bin/bash
 cd react
-serve -s build &
+serve -s build 
