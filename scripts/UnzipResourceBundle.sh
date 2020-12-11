@@ -1,2 +1,2 @@
 #!bin/bash
-unzip build.zip
+unzip build.zip -d /build
