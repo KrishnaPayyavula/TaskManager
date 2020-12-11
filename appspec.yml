@@ -7,13 +7,13 @@ files:
     destination: /react
 hooks:
   BeforeInstall:
-    - location: Scripts/UnzipResourceBundle.sh
+    - location: scripts/UnzipResourceBundle.sh
     # - location: Scripts/UnzipDataBundle.sh
   # AfterInstall:
   #   - location: Scripts/RunResourceTests.sh
   #     timeout: 180
   ApplicationStart:
-    - location: Scripts/RunFunctionalTests.sh
+    - location: scripts/RunFunctionalTests.sh
       timeout: 180
   # ValidateService:
   #   - location: Scripts/MonitorService.sh
